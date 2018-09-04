@@ -4,7 +4,7 @@ const Player = function (name, handOfCards) {
 };
 
 Player.prototype.playCard = function () {
-  return this.handOfCards[0];
+  return this.handOfCards.shift();
 };
 
 Player.prototype.selectCategory = function (card) {

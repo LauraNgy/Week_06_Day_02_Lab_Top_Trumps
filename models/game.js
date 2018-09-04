@@ -1,13 +1,13 @@
 const Game = function (players, cards) {
-  this.players = [];
-  this.cards = [];
+  this.players = players;
+  this.cards = cards;
 };
 
 Game.prototype.dealCards = function () {
 
 };
 
-Game.prototype.play = function () {
+Game.prototype.playTurn = function () {
 
 };
 
