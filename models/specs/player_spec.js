@@ -32,6 +32,11 @@ describe("Player", function () {
     assert.deepStrictEqual(actual, [card1, card2, card3]);
   });
 
+  it("should play card", function () {
+    const actual = player.playCard();
+    assert.deepStrictEqual(actual, card1);
+  });
+
   it("should select category", function () {
     const actual = player.selectCategory(card1);
     assert.strictEqual(actual, "strength");

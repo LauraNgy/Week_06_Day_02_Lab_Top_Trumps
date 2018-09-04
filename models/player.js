@@ -4,11 +4,18 @@ const Player = function (name, handOfCards) {
 };
 
 Player.prototype.playCard = function () {
-
+  return this.handOfCards[0];
 };
 
-Player.prototype.selectCategory = function () {
-
+Player.prototype.selectCategory = function (card) {
+    let highestValue = 0;
+    let pickedCat = "strength";
+    for (let value in card) {
+      if (card.value >= highestValue){
+        pickedCat = value;
+      }
+    }
+    return pickedCat;
 };
 
 module.exports = Player;
